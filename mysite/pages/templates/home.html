@@ -1,0 +1,121 @@
+{% load static %}
+<link rel="stylesheet" href="{% static 'pages/styles.css' %}">
+<script src="{% static 'pages/script.js' %}"></script>
+
+
+<header>
+    <nav>
+        <a href="#home" class="nav-link">Home</a>
+        <a href="#planets" class="nav-link">Planets</a>
+        <a href="#missions" class="nav-link">Missions</a>
+        <a href="#gallery" class="nav-link">Gallery</a>
+        <a href="#contact" class="nav-link">Contact</a>
+    </nav>
+</header>
+
+<div class="scroll-container">
+    <section id="home" class="scroll-section home-hero">
+        <div class="hero-content">
+            <h1>🌌 Welcome to Space Explorer</h1>
+           
+            <p>Embark on a journey across the stars. Discover planets, missions, and mysteries beyond Earth.</p>
+            <a href="#planets" class="hero-btn">Start Exploring</a>
+        </div>
+    </section>
+    <section id="planets" class="scroll-section container">
+        <div class="container">
+            <h1>🪐 Planets of the Solar System</h1>
+          
+     
+          
+            <table class="planet-table">
+                <tr>
+                    <th>Name</th>
+                    <th>Diameter</th>
+                    <th>Moons</th>
+                </tr>
+                <tr>
+                    <td>Mercury</td><td>4,879 km</td><td>0</td>
+                </tr>
+                <tr>
+                    <td>Venus</td><td>12,104 km</td><td>0</td>
+                </tr>
+                <tr>
+                    <td>Earth</td><td>12,742 km</td><td>1</td>
+                </tr>
+                <tr>
+                    <td>Mars</td><td>6,779 km</td><td>2</td>
+                </tr>
+                <!-- Add more rows as needed -->
+            </table>
+          </div>
+    </section>
+
+    <section id="missions" class="scroll-section container">
+        <div class="container">
+            <h1>🚀 Famous Space Missions</h1>
+          
+          
+          
+            <div class="cards">
+                <div class="card">
+                    <h3>Apollo 11</h3>
+                    <p>First manned Moon landing in 1969.</p>
+                </div>
+                <div class="card">
+                    <h3>Voyager 1</h3>
+                    <p>Launched in 1977, now in interstellar space.</p>
+                </div>
+                <div class="card">
+                    <h3>Perseverance</h3>
+                    <p>NASA’s 2020 Mars rover mission for sample collection.</p>
+                </div>
+                <!-- Add more cards -->
+            </div>
+          </div>
+    </section>
+
+    <section id="gallery" class="scroll-section container">
+        <div class="container">
+            <h1>🌌 Space Gallery</h1>
+    
+        
+            <div class="gallery-carousel">
+                <a href="https://solarsystem.nasa.gov/planets/earth/overview/" target="_blank">
+                    <img src="{% static 'pages/earth.jpg' %}" alt="Earth">
+                </a>
+                <a href="https://solarsystem.nasa.gov/planets/mars/overview/" target="_blank" >
+                    <img src="{% static 'pages/mars.jpg' %}" alt="Mars">
+                </a>
+                <a href="https://solarsystem.nasa.gov/planets/jupiter/overview/" target="_blank" >
+                    <img src="{% static 'pages/jupiter.jpg' %}" alt="Jupiter">
+                </a>
+                <a href="https://solarsystem.nasa.gov/planets/saturn/overview/" target="_blank">
+                    <img src="{% static 'pages/saturn.jpg' %}" alt="Saturn">
+                </a>
+                <a href="https://solarsystem.nasa.gov/planets/venus/overview/" target="_blank">
+                    <img src="{% static 'pages/venus.jpg' %}" alt="Venus">
+                </a>
+                <a href="https://solarsystem.nasa.gov/planets/neptune/overview/" target="_blank">
+                    <img src="{% static 'pages/neptune.jpg' %}" alt="Neptune">
+                </a>
+            </div>
+            <div class="gallery-controls">
+                <button id="prev-btn">⟵ Previous</button>
+                <button id="next-btn">Next ⟶</button>
+            </div>
+            
+        </div>
+    </section>
+
+    <section id="contact" class="scroll-section">
+        <div class="contact-card">
+            <h1>📫 Contact</h1>
+            <form>
+                <input type="text" placeholder="Your Name" required>
+                <textarea placeholder="Your Message" required></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </div>
+    </section>
+</div>

@@ -1,0 +1,27 @@
+{% load static %}
+<link rel="stylesheet" href="{% static 'pages/styles.css' %}">
+
+<div class="container">
+    <h1>🌌 Space Gallery</h1>
+
+    <nav>
+        <a href="/">Home</a> |
+        <a href="/planets/">Planets</a> |
+        <a href="/missions/">Missions</a> |
+        <a href="/gallery/">Gallery</a> |
+        <a href="/contact/">Contact</a>
+    </nav>
+
+    <p style="text-align: center; margin-bottom: 20px;">
+        (Replace with real URLs or static files)
+    </p>
+
+    <div class="gallery">
+        <a href="https://solarsystem.nasa.gov/planets/earth/overview/" target="_blank">
+            <img src="{% static 'pages/earth.jpg' %}" alt="Earth">
+        </a>
+        <a href="https://solarsystem.nasa.gov/planets/mars/overview/" target="_blank">
+            <img src="{% static 'pages/mars.jpg' %}" alt="Mars">
+        </a>
+    </div>
+</div>
